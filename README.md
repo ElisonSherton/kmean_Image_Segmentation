@@ -4,8 +4,8 @@ Using k-means algorithm to depict an image in terms of only k-colors
 # Pseudo Code
 
 1.	Create a class called Pxls (abb for pixels) to store a particular pixel’s location (x,y) and it’s color (r,g,b).
-2.	Make an ArrayList of Pxls objects called data which I populated with Pxls objects of the given image.
-3.	Select k distinct random points from the ArrayList data which serve to be the initial cen-troids for the k-means algorithm.
+2.	Make an ArrayList of Pxls objects called data which is populated with Pxls objects of the given image.
+3.	Select k distinct random points from the ArrayList data which serve to be the initial centroids for the k-means algorithm.
 4.	Make an ArrayList of ArrayList of Pxls object to hold k-clusters of data together.
 5.	After initializing the centroids, iterate over all the Pxls objects in the ArrayList data and find the centroid which is closest to each and every Pxls object. Then assign that Pxls object to the cluster dominated by the centroid which the Pxls object is closest to. In this way, each and every Pxls object is categorized into k-clusters.
 6.	Created an image wherein the pixels are colored based on the centroid color value of the cluster that the pixel belongs to.
